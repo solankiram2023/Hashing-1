@@ -1,3 +1,12 @@
+//Approach:
+//Check if the length of pattern is equal to the number of words in string.
+//Map each character to each word in string s. Check if that character exists in HashMap.
+//If it exists in the HashMap then check if that string is equal to the current string, if not then return false
+//If it does not exist, then check if the word exists in HashSet if not then add string to HashMap & hashSet
+//Else if the String exists in Set, if yes then that means the string is already mapped to some character thus return false
+//TC: o(N)
+//SC: O(1)
+
 
 import java.util.HashMap;
 import java.util.HashSet;

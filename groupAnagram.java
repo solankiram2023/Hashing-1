@@ -1,3 +1,11 @@
+//Approach: For the given array of strings we need to sort the current string and check if it exists in the HashMap
+//If yes then we can store inside the list
+//If no then we can add that to HashMap.
+//TC: O(N*K*logK)
+//SC: O(N*K)
+
+
+
 import java.util.*;
 
 class GroupAnagrams{

@@ -1,3 +1,19 @@
+//Approach #1
+//We are taking 2 HashMaps and maintain mapping of each character of str1-> str2. Loop over 1st string
+//and map each character str1 and str2. Loop over 2nd string and map each character of str2 to str1. 
+//If the character is already mapped then check if the mapped character is equal to the current character in another string.
+//If yes, then we move ahead otherwise its not isomorphic string . We repeat trhis process while looping over str2.
+
+//TC: O(2N) -> O(N)
+//sc: O(2*26) -> O(1)
+
+
+//Approach #2
+//We are using HashMap and HastSet, We check in Str1 is mapped to current character in  str2 and is present in HashMap.
+//Check if character that current character in str1 in mapped is equal to str2's current charater, if not then its not isomorphic.
+//If its not present in HashMap.Check if its present in HashSet which means the character is already mapped to something that would mean its not isomorphic . Otherwise add the character to HashMap & HashSet.
+
+
 import java.util.HashMap;
 import java.util.HashSet;
 
